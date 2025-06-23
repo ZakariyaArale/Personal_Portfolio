@@ -3,12 +3,12 @@ body{
     font-family: "Montserrat", sans-serif;
     width: 100%;
     height: auto;
-    background-color: black;
+    background: linear-gradient(135deg, #1E1E2F, #008080);
     overflow-x: hidden;  
 }
 
 .logo{
-    color:white;
+    color:#F5F5F5;
     font-size: 22px;
     font-weight: bold;
     margin-left: 150px; 
@@ -16,9 +16,8 @@ body{
 
 }
 .logo span{
-    color: #F76600;
-    text-shadow: 0 0 5px #F76600;
-
+    color: #E0A458;
+    
 }
 
 nav{
@@ -68,7 +67,7 @@ nav{
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #F76600;
+    background-color: #E0A458;
     transition: 0.2 linear;
 }
 
@@ -83,7 +82,7 @@ nav{
     transform: translateY(-500px);
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px #f4f4f9;
     transition: 0.2s linear;
 }
 
@@ -96,16 +95,16 @@ nav{
 }
 
 .dropdown .links a:hover{
-    background-color: #F76600;
+    background-color: #E0A458;
 }
 
 section{
     width: 100%;
-    min-height: 90vh;
 }
 
 section .main-container{
     display: flex;
+    min-height: 90vh;
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
@@ -140,18 +139,291 @@ section .main-container{
 }
 
 .content h1 span{
-    color: #F76600;
-    text-shadow: 0 0 5px #F76600;
+    color: #E0A458;
 }
 
-.content .sociallinks{
+.sociallinks i{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 3rem;
     height: 3rem;
     background-color: transparent;
-    border: 0.2rem solid #F76600;
+    border: 0.2rem solid #E0A458;
     border-radius: 50%;
-    color: #F76600;
+    color: #E0A458;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+
+}
+
+.sociallinks i:hover{
+    scale: 1.3;
+    color: white;
+    background-color: #E0A458;
+    
+}
+
+section .content{
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    
+
+}
+
+
+.about .about-details span{
+    color: #E0A458;
+    
+}
+
+section .title{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+
+}
+
+section .title span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+section .title span::before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #c90057;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+section .about {
+    margin-top: 300px;
+}
+
+.skills .skills-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .boxes {
+    display: flex;
+    flex-wrap: wrap;            
+    gap: 50px 50px;             
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-evenly;
+   
+}
+.skills-details{
+    width: 50%;
+    color:white;
+}
+
+
+.skills .box{
+    flex: 1 1 calc(25% - 20px);
+    transform: translateX(300px);
+    text-align: right;
+    margin: 20px 0;
+
+}
+
+.skills .topic{
+    font-size: 20px;
+    color: #E0A458;
+}
+
+.skills .per{
+    font-size: 60px;
+    color: #E0A458;
+}
+
+.Project .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.Project .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 0px 10px 2px white;
+    cursor: default;
+    color:white;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+
+}
+
+.contact .adress{
+    color: white;
+     padding: 12px;
+
+
+}
+.adress{
+    font-weight: bold;
+}
+
+.general-msg{
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.general-msg2{
+    padding: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.contact .email{
+    display: flex;
+    align-items: center;
+    margin-left: 380px; 
+}
+
+.contact .email i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    color: #E0A458;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+}
+.contact .socallinks i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #E0A458;
+    border-radius: 50%;
+    color: #E0A458;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.contact .socallinks i:hover{
+    scale: 1.3;
+    color: white;
+    background-color: #E0A458;
+    
+}
+
+.contact .content{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+
+.contact .contact-me{
+    padding: 12px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-form label{
+    display:flex;
+    color: #E0A458;
+    margin-bottom: 8px;
+    font-weight:bold;
+    margin-left: 280px; 
+}
+
+.contact-form input, .contact-form textarea{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+.contact .contact-me span{
+    color: #E0A458;
+    font-size: 30px
+}
+
+.contact .contact-form{
+    
+    background-color: transparent;
+    padding: 30px;
+    color: white;
+    border-radius: 8px;
+    margin-top: -60px;
+}
+
+.contact button{
+    width:20%;
+    height: 6vh;
+    background-color: #E0A458;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    margin-top: -30px;
+}
+
+.contact button:hover{
+    scale: 1.1;
+    color: white;
+    border: 2px solid #E0A458;
+    font-weight: 700;
+
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 15px 0;
+    text-align: flex;
+    margin-left: 1300px;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    width: 100%;
+    
+    
 }
